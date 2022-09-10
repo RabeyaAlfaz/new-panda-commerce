@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Res</title>
+    <style>
+        :root
+        {
+            --lightgrey:lightpink;
+            --displaygrid:grid;
+        }
+        .grid-container
+        {
+        display: var(--displaygrid);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        margin: 0 auto;
+        }
+        .grid-child
+        {
+        display: flex;
+         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+        padding: 50px;
+        background-color: var(--lightgrey);
+        }
+        .grid-child img
+        {
+            width:100%;
+            border-radius: 10px;
+        }
+    @media only screen and (max-width: 620px)
+             {
+                   /* For mobile phones: */
+        .grid-container
+               {
+                margin:0 auto;
+                width: 100%;
+                grid-template-columns: 1fr;
+              }
+             }
+             @media only screen and (min-width: 621px) and (max-width: 760px)
+             {
+                   /* For mobile phones: */
+                  
+        .grid-container
+               {
+                margin: auto;
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 50px ;
+              }
+             }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-child">
+            <img class="grid-img"  src="Images/satellite-1.png" alt="">
+            <h1>Heading-1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed alias molestiae facere! Error rem quis reprehenderit sit pariatur odio fuga sint natus. Aliquam explicabo modi quis, atque hic ipsa ipsam?
+            </p>
+        </div>
+        <div class="grid-child">
+            <img src="Images/satellite-2.png" alt="">
+            <h1>Heading-2</h1>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed alias molestiae facere! Error rem quis reprehenderit sit pariatur odio fuga sint natus. Aliquam explicabo modi quis, atque hic ipsa ipsam?
+            </p>
+        </div>
+        <div class="grid-child">
+            <img src="Images/satellite-3.png" alt="">
+            <h1>Heading-3</h1>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed alias molestiae facere! Error rem quis reprehenderit sit pariatur odio fuga sint natus. Aliquam explicabo modi quis, atque hic ipsa ipsam?
+            </p>
+        </div>
+        <div class="grid-child">
+            <img src="Images/satellite-3.png" alt="">
+            <h1>Heading-4</h1>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed alias molestiae facere! Error rem quis reprehenderit sit pariatur odio fuga sint natus. Aliquam explicabo modi quis, atque hic ipsa ipsam?
+            </p>
+        </div>
+        <div class="grid-child">
+            <img src="Images/satellite-2.png" alt="">
+            <h1>Heading-5</h1>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed alias molestiae facere! Error rem quis reprehenderit sit pariatur odio fuga sint natus. Aliquam explicabo modi quis, atque hic ipsa ipsam?
+            </p>
+        </div>
+        <div class="grid-child">
+            <img class="grid-img"  src="Images/satellite-1.png" alt="">
+            <h1>Heading-6</h1>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed alias molestiae facere! Error rem quis reprehenderit sit pariatur odio fuga sint natus. Aliquam explicabo modi quis, atque hic ipsa ipsam?
+            </p>
+        </div>
+        <div class="grid-child">
+            <img class="grid-img"  src="Images/satellite-1.png" alt="">
+            <h1>Heading-7</h1>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed alias molestiae facere! Error rem quis reprehenderit sit pariatur odio fuga sint natus. Aliquam explicabo modi quis, atque hic ipsa ipsam?
+            </p>
+        </div>
+        <div class="grid-child">
+            <img src="Images/satellite-2.png" alt="">
+            <h1>Heading-8</h1>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed alias molestiae facere! Error rem quis reprehenderit sit pariatur odio fuga sint natus. Aliquam explicabo modi quis, atque hic ipsa ipsam?
+            </p>
+        </div>
+        <div class="grid-child">
+            <img src="Images/satellite-3.png" alt="">
+            <h1>Heading-9</h1>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed alias molestiae facere! Error rem quis reprehenderit sit pariatur odio fuga sint natus. Aliquam explicabo modi quis, atque hic ipsa ipsam?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
